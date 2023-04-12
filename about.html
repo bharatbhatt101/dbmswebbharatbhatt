@@ -1,0 +1,227 @@
+<html>
+
+<head>
+    <title>About</title>
+    <link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.osTTmoI1uUGX-YVC1CkQ-wHaHZ&pid=Api&P=0"
+        type="image/x-icon">
+    <style>
+        #demo {
+
+
+            color: White;
+            padding: 0.5rem;
+
+
+        }
+
+
+        #demo1 {
+            color:crimson;
+            border: solid;
+            background-color: white;
+            border-color: white;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+
+
+        }
+
+        .class1 {
+
+            padding: 0.5rem;
+        }
+
+        .class2 {
+
+            padding: 0.5rem;
+        }
+
+        .class3 {
+
+            padding: 0.5rem;
+        }
+
+
+        a {
+
+            color: crimson;
+
+            background-color: white;
+
+            text-decoration: none;
+            min-width: 100px;
+
+
+
+        }
+
+        .class4 {
+
+            color: white;
+            border: solid;
+            background-color: teal;
+            border-color: teal;
+            text-decoration: none;
+            min-width: 100px;
+
+
+
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body style="background: linear-gradient(teal 8%, transparent 8%) no-repeat;">
+
+    <h1 align="left" id="demo"><b>DBMS WEBSITE</b></h1>
+
+    <h4 align="right"><a href="temp1.html" class="class1" id="demo1"><b>Home</b></a>
+        <a href="index.html" class="class2" id="demo1"><b>Index</b></a>
+        <a href="about.html" class="class3" id="demo1"><b>About<b></a>
+    </h4>
+    <h1 align="left" style="color:blue; margin-top:7rem;">About</h1>
+    <hr>
+    <hr>
+
+    <h2>What is DBMS?</h2>
+    <p style="color:crimson;">A database management system (or DBMS) is essentially nothing more than a computerized
+        data-keeping system. Users of the system are given facilities to perform several kinds of operations on such a
+        system for either manipulation of the data in the database or the management of the database structure itself.In
+        other words,The database is a collection of inter-related data which is used to retrieve, insert and delete the
+        data efficiently. It is also used to organize the data in the form of a table, schema, views, and reports,
+        etc.<br><br><b style="color:black;">For example</b>: The college Database organizes the data about the admin,
+        staff, students and faculty etc.
+
+        Using the database, you can easily retrieve, insert, and delete the information.
+    </p><br>
+    <hr>
+    <h2>What is SQL? Define DDL,DML and DCL.</h2>
+    <p style="color:green;"><b style="color:darkblue;"><u>SQL</u>:</b>
+        SQL stands for Structured Query Language
+        SQL lets you access and manipulate databases
+        SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International
+        Organization for Standardization (ISO) in 1987
+        SQL can execute queries against a database.
+        SQL can retrieve data from a database
+        SQL can insert records in a database.
+        SQL can update records in a database.
+        SQL can delete records from a database.
+        SQL can create new databases.
+        SQL can create new tables in a database.
+        SQL can create stored procedures in a database.
+        SQL can create views in a database.
+        SQL can set permissions on tables, procedures, and views.
+        <br><br>
+        <b style="color:darkblue"><u>DDL</u>:</b>A data definition language (DDL) is a computer language used to create
+        and modify the structure of
+        database objects in a database. These database objects include views, schemas, tables, indexes, etc.
+        This term is also known as data description language in some contexts, as it describes the fields and records in
+        a database table.
+        <br><br>
+        <b style="color:darkblue;"><u>DML:</u></b>A data manipulation language (DML) is a family of computer languages
+        including commands permitting
+        users to manipulate data in a database. This manipulation involves inserting data into database tables,
+        retrieving existing data, deleting data from existing tables and modifying existing data. DML is mostly
+        incorporated in SQL databases. <br><br>
+        <b style="color:darkslateblue;"><u>DCL</u>:</b>Data control language (DCL) is used to access the stored data. It
+        is mainly used for revoke and to
+        grant the user the required access to a database. In the database, this language does not have the feature of
+        rollback.<br><br>
+
+        It is a part of the structured query language (SQL).<br>
+
+        It helps in controlling access to information stored in a database. It complements the data manipulation
+        language (DML) and the data definition language (DDL).<br>
+
+        It is the simplest among three commands.<br>
+
+        It provides the administrators, to remove and set database permissions to desired users as needed.<br>
+
+        These commands are employed to grant, remove and deny permissions to users for retrieving and manipulating a
+        database.<br>
+    </p><br>
+    <hr>
+    <h2>What is Views?</h2>
+    <p style="color:blue;">A view is a virtual table whose contents are defined by a query. Like a table, a view
+        consists of a set of named columns and rows of data. Unless indexed, a view does not exist as a stored set of
+        data values in a database. The rows and columns of data come from tables referenced in the query defining the
+        view and are produced dynamically when the view is referenced.<br><br>
+
+        A view acts as a filter on the underlying tables referenced in the view. The query that defines the view can be
+        from one or more tables or from other views in the current or other databases. Distributed queries can also be
+        used to define views that use data from multiple heterogeneous sources. This is useful, for example, if you want
+        to combine similarly structured data from different servers, each of which stores data for a different region of
+        your organization.<br>
+
+        Views are generally used to focus, simplify, and customize the perception each user has of the database. Views
+        can be used as security mechanisms by letting users access data through the view, without granting the users
+        permissions to directly access the underlying base tables of the view. Views can be used to provide a backward
+        compatible interface to emulate a table that used to exist but whose schema has changed. Views can also be used
+        when you copy data to and from SQL Server to improve performance and to partition data.
+    </p><br>
+    <hr>
+    <h2>What is Functions?</h2>
+    <p style="color:purple;">Functions in SQL Server are the database objects that contains a set of SQL statements to
+        perform a specific task. A function accepts input parameters, perform actions, and then return the result. We
+        should note that functions always return either a single value or a table. The main purpose of functions is to
+        replicate the common task easily. We can build functions one time and can use them in multiple locations based
+        on our needs. SQL Server does not allow to use of the functions for inserting, deleting, or updating records in
+        the database tables.<br><br>
+
+        <b style="color:red;">The following are the rules for creating SQL Server functions</b>:<br><br>
+
+        1.A function must have a name, and the name cannot begin with a special character such as @, $, #, or other
+        similar characters.<br><br>
+        2.SELECT statements are the only ones that operate with functions.<br><br>
+        3.We can use a function anywhere such as AVG, COUNT, SUM, MIN, DATE, and other functions with the SELECT query
+        in SQL.<br><br>
+        4.Whenever a function is called, it compiles.<br><br>
+        5.Functions must return a value or result.<br><br>
+        6.Functions use only input parameters.<br><br>
+        7.We cannot use TRY and CATCH statements in functions.
+
+    </p><br>
+    <hr>
+    <h2>What is PLSQL?</h2>
+    <p style="color:slateblue;">PL/SQL is a block structured language that enables developers to combine the power of
+        SQL with procedural statements.All the statements of a block are passed to oracle engine all at once which
+        increases processing speed and decreases the traffic.<br><br>
+        <b style="color:green;"><u>Basics of PL/SQL</u></b><br><br>
+
+        -PL/SQL stands for Procedural Language extensions to the Structured Query Language (SQL).<br>
+        - PL/SQL is a combination of SQL along with the procedural features of programming languages.<br>
+        - Oracle uses a PL/SQL engine to processes the PL/SQL statements.<br>
+        - PL/SQL includes procedural language elements like conditions and loops. It allows declaration of constants and
+        variables, procedures and functions, types and variable of those types and triggers.<br><br>
+
+        <b style="color:green;"><u>Disadvantages of SQL</u></b>:<br><br>
+
+        - SQL doesn’t provide the programmers with a technique of condition checking, looping and branching.<br>
+        -SQL statements are passed to Oracle engine one at a time which increases traffic and decreases speed.<br>
+        - SQL has no facility of error checking during manipulation of data.<br><br>
+
+        <b style="color:green;"><u>Features of PL/SQL</u></b>:<br><br>
+
+        -PL/SQL is basically a procedural language, which provides the functionality of decision making, iteration and
+        many more features of procedural programming languages.<br>
+        -PL/SQL can execute a number of queries in one block using single command.<br>
+        -One can create a PL/SQL unit such as procedures, functions, packages, triggers, and types, which are stored in
+        the database for reuse by applications.<br>
+        -PL/SQL provides a feature to handle the exception which occurs in PL/SQL block known as exception handling
+        block.<br>
+        -Applications written in PL/SQL are portable to computer hardware or operating system where Oracle is
+        operational.<br>
+        -PL/SQL Offers extensive error checking.<br>
+
+
+    </p><br>
+    <hr>
+
+
+
+    <h2 align="center" style="margin-top:90px;"><a href="temp1.html" class="class4">Go To Home</a></h2>
+    
+        
+</html>

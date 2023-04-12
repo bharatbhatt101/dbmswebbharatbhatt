@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <title>JOIN in mysql</title>
+    <link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.osTTmoI1uUGX-YVC1CkQ-wHaHZ&pid=Api&P=0" type="image/x-icon">
+    <style>
+        #demo {
+            
+            
+            color: White;
+            padding: 0.5rem;
+            
+
+        }
+        
+
+        #demo1 {
+            color:crimson;
+            border: solid;
+            background-color:white;
+            border-color: white;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            
+
+        }
+
+        .class1 {
+
+            padding: 0.5rem;
+        }
+
+        .class2 {
+
+            padding: 0.5rem;
+        }
+
+        .class3 {
+
+            padding: 0.5rem;
+        }
+
+        .class4 {
+
+            color: white;
+            border: solid;
+            background-color:teal;
+            border-color:teal;
+            text-decoration: none;
+             min-width:100px;
+
+
+
+        }
+        li{
+
+            margin-top:6rem;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color:green;
+        }
+        
+        
+    </style>
+</head>
+
+<body style="background: linear-gradient(teal 6%, transparent 6%) no-repeat;">
+
+    <h1 align="left" id="demo"><b>DBMS WEBSITE</b></h1>
+
+    <h4 align="right"><a href="temp1.html" class="class1" id="demo1"><b>Home</b></a>
+        <a href="index.html" class="class2" id="demo1"><b>Index</b></a>
+        <a href="about.html" class="class3" id="demo1"><b>About<b></a>
+    </h4>
+ 
+    <ul>
+
+        <li><h2 style="color:red;">JOINS in mysql</h2></li>
+
+    </ul><br>
+    <h2>Inner Joins</h2>
+    <p>The MySQL Inner Join is used to returns only those results from the tables that match the specified condition and hides other rows and columns. MySQL assumes it as a default Join, so it is optional to use the Inner Join keyword with the query.<br><br>
+
+        We can understand it with the following visual representation where Inner Joins returns only the matching results from table1 and table2.<br><br>
+        The Inner Join keyword is used with the SELECT statement and must be written after the FROM clause. The following syntax explains it more clearly.
+
+    </p>
+    <p><h3 style="color:blue;">Syntax :</h3> select * from table1_name inner join table2_name on table1.col_name=table2.col_name;</p>
+    <h2>Natural Joins</h2>
+    <p>When we combine rows of two or more tables based on a common column between them, this operation is called joining. A natural join is a type of join operation that creates an implicit join by combining tables based on columns with the same name and data type. It is similar to the INNER or LEFT JOIN, but we cannot use the ON or USING clause with natural join as we used in them.<br><br>
+        Points to remember:<br><br>
+        
+            1.There is no need to specify the column names to join.<br><br>
+            2. The resultant table always contains unique columns.<br><br>
+            3.It is possible to perform a natural join on more than two tables.<br><br>
+            4.Do not use the ON clause.
+        </p>
+
+    <h2 style="color:green;">Output:</h2>
+<h3>Student table</h3>
+
+<img src="student table.png" border="1px" width="350px">
+<h3>Marks table</h3>
+
+<img src="marks table.png" border="1px" width="350px">
+
+<h3>INNER JOIN</h3>
+<p>The Inner Join keyword is used with the SELECT statement and must be written after the FROM clause. The following syntax explains it more clearly.</p><br><br>
+
+<img src="INNER JOIN.png" border="1px" width="420px"><br><br>
+<p>In this syntax, we first have to select the column list, then specify the table name that will be joined to the main table, appears in the Inner Join (table1, table2), and finally, provide the condition after the ON keyword. The Join condition returns the matching rows between the tables specifies in the Inner clause.
+</p>
+
+<h3>NATURAL JOIN</h3>
+<p>In this syntax, we need to specify the column names to be included in the result set after the SELECT keyword. If we want to select all columns from both tables, the * operator will be used. Next, we will specify the table names for joining after the FROM keyword and write the NATURAL JOIN clause between them.</p><br><br>
+
+<img src="NATURAL JOIN.png" border="1px" width="420px">
+    
+        <h3 align="center" style="margin-top:100px;"><a href="code39.html" class="class4">Back</a>
+            <a href="temp1.html" class="class4">Refresh</a>
+        <a href="code41.html" class="class4">Next</a>
+    </h3>
+ 
+
+</body>
+
+</html>

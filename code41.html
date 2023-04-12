@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <title>OUTER JOINS</title>
+    <link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.osTTmoI1uUGX-YVC1CkQ-wHaHZ&pid=Api&P=0" type="image/x-icon">
+    <style>
+        #demo {
+            
+            
+            color: White;
+            padding: 0.5rem;
+            
+
+        }
+        
+
+        #demo1 {
+            color:crimson;
+            border: solid;
+            background-color:white;
+            border-color: white;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            
+
+        }
+
+        .class1 {
+
+            padding: 0.5rem;
+        }
+
+        .class2 {
+
+            padding: 0.5rem;
+        }
+
+        .class3 {
+
+            padding: 0.5rem;
+        }
+
+        .class4 {
+
+            color: white;
+            border: solid;
+            background-color:teal;
+            border-color:teal;
+            text-decoration: none;
+             min-width:100px;
+
+
+
+        }
+        li{
+
+            margin-top:6rem;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color:green;
+        }
+        
+        
+    </style>
+</head>
+
+<body style="background: linear-gradient(teal 8%, transparent 8%) no-repeat;">
+
+    <h1 align="left" id="demo"><b>DBMS WEBSITE</b></h1>
+
+    <h4 align="right"><a href="temp1.html" class="class1" id="demo1"><b>Home</b></a>
+        <a href="index.html" class="class2" id="demo1"><b>Index</b></a>
+        <a href="about.html" class="class3" id="demo1"><b>About<b></a>
+    </h4>
+ 
+    <ul>
+
+        <li><h2 style="color:red;">OUTER JOINS</h2></li>
+
+    </ul><br>
+    <p>In the SQL outer JOIN all the content of the both tables are integrated together either they are matched or not.<br><br>
+
+        If you take an example of employee table<br><br>
+        
+        Outer join of three types:<br><br>
+        
+        1.Left outer join (also known as left join): this join returns all the rows from left table combine with the matching rows of the right table. If you get no matching in the right table it returns NULL values.<br><br>
+        2.Right outer join (also known as right join): this join returns all the rows from right table are combined with the matching rows of left table .If you get no column matching in the left table .it returns null value.<br><br>
+    3.Full outer join (also known as full join):This join is combination of right join and left join</p>
+    <p><h3 style="color:blue;">Syntax :</h3> select * from table1_name outer join table2_name on table1.col_name=table2.col_name;</p>
+
+    <h2 style="color:green;">Output:</h2>
+<h3>Left joins</h3>
+<p>The Left Join in MySQL is used to query records from multiple tables. This clause is similar to the Inner Join clause that can be used with a SELECT statement immediately after the FROM keyword. When we use the Left Join clause, it will return all the records from the first (left-side) table, even no matching records found from the second (right side) table. If it will not find any matches record from the right side table, then returns null.<br><br>
+
+    In other words, the Left Join clause returns all the rows from the left table and matched records from the right table or returns Null if no matching record found. This Join can also be called a Left Outer Join clause. So, Outer is the optional keyword to use with Left Join.<br><br>
+    
+   
+
+We can understand it with the following visual representation where Left Joins returns all records from the left-hand table and only the matching records from the right side table:</p>
+
+<img src="Left joins.png" border="1px" width="400px">
+<h3>Right joins</h3>
+<p>The Right Join is used to joins two or more tables and returns all rows from the right-hand table, and only those results from the other table that fulfilled the join condition. If it finds unmatched records from the left side table, it returns Null value. It is similar to the Left Join, except it gives the reverse result of the join tables. It is also known as Right Outer Join. So, Outer is the optional clause used with the Right Join.<br><br>
+
+    We can understand it with the following visual representation where Right Outer Join returns all records from the left-hand table and only the matching records from the other table.</p>
+
+<img src="Right joins.png" border="1px" width="400px">
+
+<h3>FULL JOIN</h3>
+
+<p>The SQL full join is the result of combination of both left and right outer join and the join tables have all the records from both tables. It puts NULL on the place of matches not found.<br><br>
+
+    SQL full outer join and SQL join are same. generally it is known as SQL FULL JOIN.<br><br>
+    SQL full outer join is used to combine the result of both left and right outer join and returns all rows (don't care its matched or unmatched) from the both participating tables.</p>
+<img src="FULL JOIN.png" border="1px" width="420px">
+
+
+    
+        <h3 align="center" style="margin-top:100px;"><a href="code40.html" class="class4">Back</a>
+            <a href="temp1.html" class="class4">Refresh</a>
+        <a href="code42.html" class="class4">Next</a>
+    </h3>
+ 
+
+</body>
+
+</html>

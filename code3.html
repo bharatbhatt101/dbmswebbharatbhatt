@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>How we can delete the database</title>
+    <link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.osTTmoI1uUGX-YVC1CkQ-wHaHZ&pid=Api&P=0" type="image/x-icon">
+    <style>
+        #demo {
+            
+            
+            color: White;
+            padding: 0.5rem;
+            
+
+        }
+        
+
+        #demo1 {
+            color:crimson;
+            border: solid;
+            background-color:white;
+            border-color: white;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            
+
+        }
+
+        .class1 {
+
+            padding: 0.5rem;
+        }
+
+        .class2 {
+
+            padding: 0.5rem;
+        }
+
+        .class3 {
+
+            padding: 0.5rem;
+        }
+
+        .class4 {
+
+            color: white;
+            border: solid;
+            background-color:teal;
+            border-color:teal;
+            text-decoration: none;
+             min-width:100px;
+
+
+
+        }
+        li{
+
+            margin-top:5rem;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color:green;
+        }
+        
+        
+    </style>
+</head>
+
+<body style="background: linear-gradient(teal 7%, transparent 7% ) no-repeat;">
+
+    <h1 align="left" id="demo"><b>DBMS WEBSITE</b></h1>
+
+    <h4 align="right"><a href="temp1.html" class="class1" id="demo1"><b>Home</b></a>
+        <a href="index.html" class="class2" id="demo1"><b>Index</b></a>
+        <a href="about.html" class="class3" id="demo1"><b>About<b></a>
+    </h4>
+ 
+    <ul>
+
+        <li><h2 style="color:red;">How we can delete the database</h2></li>
+    </ul><br>
+    <p>The SQL Drop Database statement deletes the existing database permanently from the database system. This statement deletes all the views and tables if stored in the database, so be careful while using this query in SQL.<br><br>
+
+        Following are the most important points which are required to learn before removing the database from the database system:<br><br>
+        
+            This statement deletes all the data from the database. If you want to restore the deleted data in the future, you should keep the backup of data of that database which you want to delete.<br><br>
+            Another most important point is that you cannot delete that database from the system which is currently in use by another database user. If you do so, then the drop statement shows the error </p>
+    <p><h3 style="color:blue;">Syntax:</h3> drop database database_name;</p><br><br>
+
+    <p>In this SQL syntax, we have to specify the name of that database which we want to delete permanently from the database system. We have to write the name of the database after the DROP DATABASE keyword in every example.</p><br><br>
+
+    <p>In this article, we took the following two examples that will help how to run and perform the Drop Database query in SQL:</p>
+
+    <h2 style="color:green;">Output:</h2>
+
+    <p>Suppose, we want to delete the Details database with all its data from the database system so, firstly we have to check that the Details database exists in the system or not by using the following statement:</p>
+    <h3>Before delete database</h3>
+    <img src="before delete.png" border="1px" width="350px"><br><br>
+
+    <p>After drop the database the structure will shown as given in the following output:</p>
+
+    <h3>After delete database</h3>
+    <img src="after delete.png" border="1px" width="350px">
+
+   
+
+    <h3 align="center" style="margin-top:100px;"><a href="code2.html" class="class4">Back</a>
+        <a href="temp1.html" class="class4">Refresh</a>
+        <a href="code4.html" class="class4">Next</a>
+    </h3>
+ 
+
+</body>
+
+</html>

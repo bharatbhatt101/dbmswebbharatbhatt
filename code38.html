@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>Auto_Incerment field and Enum data type</title>
+    <link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.osTTmoI1uUGX-YVC1CkQ-wHaHZ&pid=Api&P=0" type="image/x-icon">
+    <style>
+        #demo {
+            
+            
+            color: White;
+            padding: 0.5rem;
+            
+
+        }
+        
+
+        #demo1 {
+            color:crimson;
+            border: solid;
+            background-color:white;
+            border-color: white;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            
+
+        }
+
+        .class1 {
+
+            padding: 0.5rem;
+        }
+
+        .class2 {
+
+            padding: 0.5rem;
+        }
+
+        .class3 {
+
+            padding: 0.5rem;
+        }
+
+        .class4 {
+
+            color: white;
+            border: solid;
+            background-color:teal;
+            border-color:teal;
+            text-decoration: none;
+             min-width:100px;
+
+
+
+        }
+        li{
+
+            margin-top:8rem;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color:green;
+        }
+        
+    </style>
+</head>
+
+<body style="background: linear-gradient(teal 8%, transparent 8%) no-repeat;">
+
+    <h1 align="left" id="demo"><b>DBMS WEBSITE</b></h1>
+
+    <h4 align="right"><a href="temp1.html" class="class1" id="demo1"><b>Home</b></a>
+        <a href="index.html" class="class2" id="demo1"><b>Index</b></a>
+        <a href="about.html" class="class3" id="demo1"><b>About<b></a>
+    </h4>
+ 
+    <ul>
+
+        <li><h2 style="color:red;">Auto_Incerment field and Enum data type</h1></li>
+    </ul><br>
+<h2>Auto_increment</h2>
+<p>Databases are used to store the humongous amount of data logically. You might have come across various instances wherein you face difficulty mentioning a unique number for every record present in the table. This scenario is practically impossible because the manual entry is restricted. Thus, there's no scope for incrementing the values. In this kind of situation, you drop in other methods and choose auto increment in SQL. The auto-increment in SQL entering a unique number increases the count to every new record present in the table automatically. To get familiar with auto-increment in SQL, let's look at some justifications to understand better.</p><br>
+
+<h2>ENUM data type</h2>
+
+    <p>The ENUM data type in MySQL is a string object. It allows us to limit the value chosen from a list of permitted values in the column specification at the time of table creation. It is short for enumeration, which means that each column may have one of the specified possible values. It uses numeric indexes (1, 2, 3…) to represent string values.<br><br>
+
+        MySQL ENUM data type contains the following advantages:<br><br>
+        
+            1.Compact data storage where the column may have a limited set of specified possible values. Here, the string values automatically used as a numeric index.<br><br>
+           2. It allows readable queries and output because the numbers can be translated again to the corresponding string.<br><br>
+            3.It can accept many data types like integer, floating-point, decimal, and string.
+        
+        </p>
+    <p><h3 style="color: blue;">Syntax 1:</h3> create table table_name(col_name not null AUTO_INCREMENT(field),col,pk(auto_inc col));</p><br><br><br>
+    <p>The following are the syntax used to define ENUM data type in the column:</p>
+    <p><h3 style="color: blue;">Syntax 2:</h3> create table table_name(col_name Enum dt(Enumvalue));</p>
+
+    <h2 style="color:green;">Output:</h2>
+<h3>Auto increment field</h3>
+<p>As the name suggests, auto-increment is defined as a field that is mainly used to generate a unique number for each record being added to a table at any instance. In general terms, it is used for a primary key column because a primary key in SQL is supposed to be unique and not null. Thus, auto-increment makes it easy for the developers to automatically generate a unique number for all the records.<br><br>
+
+    The data that you store in the database will not always have unique properties, so that some records are picked and manipulated uniquely. To ensure such unique identification of each record, you create an attribute for unique identification that can specify each row. Thus, after creating such a unique identity, you need to set it with auto increment so that values once incremented can be conveniently stored in the database.<br><br>
+    
+    Auto increment in SQL adds up an advantage by easily identifying each record. It is important to keep in mind that you need to set the column as auto-increment in the Create statement. Else, some problems may arise. Thus, to maintain integrity, you need to assign a primary key to the auto-increment, ensuring that the data's identity is maintained in the database.</p>
+
+<img src="Auto increment.png" border="1px" width="550px">
+
+
+
+<h3>Enum data type</h3>
+<p>In the above syntax, we have defined only three ENUM values, but it can be increased according to our needs. Here, we have to make sure that the enumeration values should always keep inside the quoted string literal.</p>
+
+<img src="Enum data type.png" border="1px" width="550px">
+
+    
+        <h3 align="center" style="margin-top:100px;"><a href="code37.html" class="class4">Back</a>
+            <a href="temp1.html" class="class4">Refresh</a>
+        <a href="code39.html" class="class4">Next</a>
+    </h3>
+ 
+
+</body>
+
+</html>

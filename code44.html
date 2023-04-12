@@ -1,0 +1,115 @@
+
+<html>
+
+<head>
+    <title>OR REPLACE option in  Views</title>
+    <link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.osTTmoI1uUGX-YVC1CkQ-wHaHZ&pid=Api&P=0" type="image/x-icon">
+    <style>
+        #demo {
+            
+            
+            color: White;
+            padding: 0.5rem;
+            
+
+        }
+        
+
+        #demo1 {
+            color:crimson;
+            border: solid;
+            background-color:white;
+            border-color: white;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            
+
+        }
+
+        .class1 {
+
+            padding: 0.5rem;
+        }
+
+        .class2 {
+
+            padding: 0.5rem;
+        }
+
+        .class3 {
+
+            padding: 0.5rem;
+        }
+
+        .class4 {
+
+            color: white;
+            border: solid;
+            background-color:teal;
+            border-color:teal;
+            text-decoration: none;
+             min-width:100px;
+
+
+
+        }
+        li{
+
+            margin-top:5rem;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color:green;
+        }
+        
+        
+    </style>
+</head>
+
+<body style="background: linear-gradient(teal 10%, transparent 10%) no-repeat;">
+
+    <h1 align="left" id="demo"><b>DBMS WEBSITE</b></h1>
+
+    <h4 align="right"><a href="temp1.html" class="class1" id="demo1"><b>Home</b></a>
+        <a href="index.html" class="class2" id="demo1"><b>Index</b></a>
+        <a href="about.html" class="class3" id="demo1"><b>About<b></a>
+    </h4>
+ 
+    <ul>
+
+        <li><h2 style="color:red;">The OR REPLACE option in  Views</h2></li>
+
+    </ul><br>
+    <p>The REPLACE statement in MySQL is an extension of the SQL Standard. This statement works the same as the INSERT statement, except that if an old row matches the new record in the table for a PRIMARY KEY or a UNIQUE index, this command deleted the old row before the new row is added.<br><br>
+
+        This statement is required when we want to update the existing records into the table to keep them updated. If we use the standard insert query for this purpose, it will give a Duplicate entry for PRIMARY KEY or a UNIQUE key error. In this case, we will use the REPLACE statement to perform our task. The REPLACE command requires one of the two possible actions take place:<br><br>
+        
+            1.If no matching value is found with the existing data row, then a standard INSERT statement is performed.<br><br>
+           2. If the duplicate record found, the replace command will delete the existing row and then adds the new record in the table.<br><br>
+        
+        In the REPLACE statement, the updation performed in two steps. First, it will delete the existing record, and then the newly updated record is added, similar to a standard INSERT command. Thus, we can say that the REPLACE statement performs two standard functions, DELETE and INSERT.<br><br>
+        The following are the syntax of REPLACE statement in MySQL:</p>
+    <p><h3 style="color:blue;">Syntax :</h3> create or replace view view_name as select * from table_name where condition;</p>
+    <h3>Inserted data shown in table as in view</h3>
+
+<img src="Inserted data shown in table as in view.png" border="1px" width="350px">
+
+    <h2 style="color:green;">Output:</h2>
+<h3>OR REPLACE in view</h3>
+
+<img src="OR REPLACE in view.png" border="1px" width="400px">
+
+
+
+
+
+    
+        <h3 align="center" style="margin-top:100px;"><a href="code43.html" class="class4">Back</a>
+            <a href="temp1.html" class="class4">Refresh</a>
+        <a href="code45.html" class="class4">Next</a>
+    </h3>
+ 
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title>Create a table with data from another table </title>
+    <link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.osTTmoI1uUGX-YVC1CkQ-wHaHZ&pid=Api&P=0" type="image/x-icon">
+    <style>
+        #demo {
+            
+            
+            color: White;
+            padding: 0.5rem;
+            
+
+        }
+        
+
+        #demo1 {
+            color:crimson;
+            border: solid;
+            background-color:white;
+            border-color: white;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            
+
+        }
+
+        .class1 {
+
+            padding: 0.5rem;
+        }
+
+        .class2 {
+
+            padding: 0.5rem;
+        }
+
+        .class3 {
+
+            padding: 0.5rem;
+        }
+
+        .class4 {
+
+            color: white;
+            border: solid;
+            background-color:teal;
+            border-color:teal;
+            text-decoration: none;
+             min-width:100px;
+
+
+
+        }
+        li{
+
+            margin-top:5rem;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color:green;
+        }
+        
+    </style>
+</head>
+
+<body style="background: linear-gradient(teal 10%, transparent 10%) no-repeat;">
+
+    <h1 align="left" id="demo"><b>DBMS WEBSITE</b></h1>
+
+    <h4 align="right"><a href="temp1.html" class="class1" id="demo1"><b>Home</b></a>
+        <a href="index.html" class="class2" id="demo1"><b>Index</b></a>
+        <a href="about.html" class="class3" id="demo1"><b>About<b></a>
+    </h4>
+ 
+    <ul>
+
+        <li><h2 style="color:red;">Create a table with data from another table</h2></li>
+    </ul><br>
+    <p>MySQL copy or clone table is a feature that allows us to create a duplicate table of an existing table, including the table structure, indexes, constraints, default values, etc. Copying data of an existing table into a new table is very useful in a situation like backing up data in table failure. It is also advantageous when we need to test or perform something without affecting the original table, for example, replicating the production data for testing.</p>
+    <p><h3 style="color:blue;">Syntax:</h3>create table  new table_name as select * from old table_name;</p><br><br>
+    <p>We can copy an existing table to a new table using the CREATE TABLE and SELECT statement, as shown below:</p><br><br>
+    <p>From the above, first, it creates a new table that indicates in the CREATE TABLE statement. Second, the result set of a SELECT statement defines the structure of a new table. Finally, MySQL fills data getting from the SELECT statement to the newly created table.</p><br><br>
+    <p>If there is a need to copy only partial data from an existing table to a new table, use WHERE clause with the SELECT statement</p>
+
+    <h2 style="color:green;">Output:</h2>
+<h3>Original table</h3>
+<img src="original table1.png" border="1px" width="350px">
+<h3>Copy table with data</h3>
+    <img src="copy table1.png" border="1px" width="350px">
+    
+    
+    
+        <h3 align="center" style="margin-top:100px;"><a href="code17.html" class="class4">Back</a>
+            <a href="temp1.html" class="class4">Refresh</a>
+        <a href="code19.html" class="class4">Next</a>
+    </h3>
+ 
+
+</body>
+
+</html>

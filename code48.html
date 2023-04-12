@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>Group by using ROLLUP operator</title>
+    <link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.osTTmoI1uUGX-YVC1CkQ-wHaHZ&pid=Api&P=0"
+        type="image/x-icon">
+    <style>
+        #demo {
+
+
+            color: White;
+            padding: 0.5rem;
+
+
+        }
+
+
+        #demo1 {
+            color:crimson;
+            border: solid;
+            background-color: white;
+            border-color: white;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+
+
+        }
+
+        .class1 {
+
+            padding: 0.5rem;
+        }
+
+        .class2 {
+
+            padding: 0.5rem;
+        }
+
+        .class3 {
+
+            padding: 0.5rem;
+        }
+
+        .class4 {
+
+            color: white;
+            border: solid;
+            background-color: teal;
+            border-color: teal;
+            text-decoration: none;
+            min-width: 100px;
+
+
+
+        }
+
+        li {
+
+            margin-top: 5rem;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color:green;
+        }
+    </style>
+</head>
+
+<body style="background: linear-gradient(teal 10%, transparent 10%) no-repeat;">
+
+    <h1 align="left" id="demo"><b>DBMS WEBSITE</b></h1>
+
+    <h4 align="right"><a href="temp1.html" class="class1" id="demo1"><b>Home</b></a>
+        <a href="index.html" class="class2" id="demo1"><b>Index</b></a>
+        <a href="about.html" class="class3" id="demo1"><b>About<b></a>
+    </h4>
+
+    <ul>
+
+        <li><h2 style="color:red;">Group by using ROLLUP operator</h2></li>
+
+    </ul><br>
+    <p>The ROLLUP in MySQL is a modifier used to produce the summary output, including extra rows that represent super-aggregate (higher-level) summary operations. It enables us to sum-up the output at multiple levels of analysis using a single query. It is mainly used to provide support for OLAP (Online Analytical Processing) operations.<br><br>
+
+        The ROLLUP modifier can only be used with the GROUP BY query in MySQL.</p>
+    <p><h3 style="color:blue;">Syntax :</h3> select col1,col2,..., group function(col_name) from table name group by col_name,col_name,... with rollup;</p><br><br>
+    <p>In this syntax, we need to specify the column names displayed in the query result in the SELECT clause. Next, we will mention the table name. After that, we have specified the GROUP BY clause, including the column names based on which we want to aggregate data. Finally, we specify the WITH ROLLUP modifier to get the super-aggregate output in an additional row.<br><br>
+
+        We have already learned that the GROUP BY query is applied with aggregate functions such as MAX, MIN, SUM, COUNT, AVG, etc. that groups the output rows by single or multiple columns. The ROLLUP modifier is an option to use GROUP BY query that includes extra fields for representing the subtotals. These additional rows are called super-aggregate rows, which is the combination of the grand-total rows. Thus, the ROLLUP modifier allows us to create multiple grouping of set rows within a single query based on the columns specified in the GROUP BY clause in MySQL.</p>
+
+    <h2 style="color:green;">Output:</h2>
+    <h3>Emp table Data</h3>
+
+ <img src="Emp table Data.png" border="1px" width="500px">
+    <h3>Use of ROLLUP operator</h3>
+
+ <img src="Use ROLLUP operator.png" border="1px" width="550px">
+
+    <h3 align="center" style="margin-top:100px;"><a href="code47.html" class="class4">Previous</a>
+        <a href="temp1.html" class="class4">Refresh</a>
+        <a href="code49.html" class="class4">Next</a>
+    </h3>
+
+
+</body>
+
+</html>

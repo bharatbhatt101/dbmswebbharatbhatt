@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>How we can delete all the data of the table</title>
+    <link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.osTTmoI1uUGX-YVC1CkQ-wHaHZ&pid=Api&P=0" type="image/x-icon">
+    <style>
+        #demo {
+            
+            
+            color: White;
+            padding: 0.5rem;
+            
+
+        }
+        
+
+        #demo1 {
+            color: crimson;
+            
+            border: solid;
+            background-color:white;
+            border-color: white;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            
+
+        }
+
+        .class1 {
+
+            padding: 0.5rem;
+        }
+
+        .class2 {
+
+            padding: 0.5rem;
+        }
+
+        .class3 {
+
+            padding: 0.5rem;
+        }
+
+        .class4 {
+
+            color: white;
+            border: solid;
+            background-color:teal;
+            border-color:teal;
+            text-decoration: none;
+             min-width:100px;
+
+
+
+        }
+        li{
+
+            margin-top:6rem;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color:green;
+        }
+        
+        
+    </style>
+</head>
+
+<body style="background: linear-gradient(teal 10%, transparent 10%) no-repeat;">
+
+    <h1 align="left" id="demo"><b>DBMS WEBSITE</b></h1>
+
+    <h4 align="right"><a href="temp1.html" class="class1" id="demo1"><b>Home</b></a>
+        <a href="index.html" class="class2" id="demo1"><b>Index</b></a>
+        <a href="about.html" class="class3" id="demo1"><b>About<b></a>
+    </h4>
+ 
+    <ul>
+
+        <li><h2 style="color:red;">How we can delete all the data of the table</h2> </li>
+    </ul><br>
+    <p>MySQL DELETE statement is used to remove records from the MySQL table that is no longer required in the database. This query in MySQL deletes a full row from the table and produces the count of deleted rows. It also allows us to delete more than one record from the table within a single query, which is beneficial while removing large numbers of records from a table. By using the delete statement, we can also remove data based on conditions.<br><br>
+
+        Once we delete the records using this query, we cannot recover it. Therefore before deleting any records from the table, it is recommended to create a backup of your database. The database backups allow us to restore the data whenever we need it in the future.</p><br><br>
+        <p>The following are the syntax that illustrates how to use the DELETE statement:</p>
+    <p><h3 style="color:blue;">Syntax:</h3>delete from table_name;</p><br><br>
+    <p>In the above statement, we have to first specify the table name from which we want to delete data. Second, we have to specify the condition to delete records in the WHERE clause, which is optional.</p>
+
+    <h2 style="color:green;">Output:</h2>
+    <p>Here, we are going to use the "student1" tables for the demonstration of the DELETE statement. Suppose the studentt1 table contain the following data:</p>
+    <h3>Data before delete</h3>
+    <img src=" before delete table data.png" border="1px" width="350px"><br><br>
+    <p>If we want to delete student1 all data, we will use the DELETE statement without the WHERE clause. See the below query:</p><br><br>
+    <p>After the execution of the query, it will return the output as below image. Once the record is deleted, verify the table using the SELECT statement:</p>
+    
+    <h3>Data after delete</h3>
+    <img src="after dalete table data.png" border="1px" width="350px">
+    
+        <h3 align="center" style="margin-top:100px;"><a href="code9.html" class="class4">Back</a>
+            <a href="temp1.html" class="class4">Refresh</a>
+        <a href="code11.html" class="class4">Next</a>
+    </h3>
+ 
+
+</body>
+
+</html>

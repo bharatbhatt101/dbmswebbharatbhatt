@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>Primary Key constraints</title>
+    <link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.osTTmoI1uUGX-YVC1CkQ-wHaHZ&pid=Api&P=0" type="image/x-icon">
+    <style>
+        #demo {
+            
+            
+            color: White;
+            padding: 0.5rem;
+            
+
+        }
+        
+
+        #demo1 {
+            color:crimson;
+            border: solid;
+            background-color:white;
+            border-color: white;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            
+
+        }
+
+        .class1 {
+
+            padding: 0.5rem;
+        }
+
+        .class2 {
+
+            padding: 0.5rem;
+        }
+
+        .class3 {
+
+            padding: 0.5rem;
+        }
+
+        .class4 {
+
+            color: white;
+            border: solid;
+            background-color:teal;
+            border-color:teal;
+            text-decoration: none;
+             min-width:100px;
+
+
+
+        }
+        li{
+
+            margin-top:6rem;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color:green;
+        }
+        
+        
+    </style>
+</head>
+
+<body style="background: linear-gradient(teal 14%, transparent 14%) no-repeat;">
+
+    <h1 align="left" id="demo"><b>DBMS WEBSITE</b></h1>
+
+    <h4 align="right"><a href="temp1.html" class="class1" id="demo1"><b>Home</b></a>
+        <a href="index.html" class="class2" id="demo1"><b>Index</b></a>
+        <a href="about.html" class="class3" id="demo1"><b>About<b></a>
+    </h4>
+ 
+    <ul>
+
+        <li><h2 style="color:red;">Primary Key Constraints</h1> </li>
+    </ul><br>
+    <p>MySQL primary key is a single or combination of the field, which is used to identify each record in a table uniquely. If the column contains primary key constraints, then it cannot be null or empty. A table may have duplicate columns, but it can contain only one primary key. It always contains unique value into a column.<br><br>
+
+        When you insert a new row into the table, the primary key column can also use the AUTO_INCREMENT attribute to generate a sequential number for that row automatically. MySQL automatically creates an index named "Primary" after defining a primary key into the table. Since it has an associated index, we can say that the primary key makes the query performance fast.</p>
+        <h2>Rules for Primary key</h2>
+        <p>Following are the rules for the primary key:<br><br>
+
+            1.The primary key column value must be unique.<br><br>
+            2.Each table can contain only one primary key.<br><br>
+            3.The primary key column cannot be null or empty.<br><br>
+            4.MySQL does not allow us to insert a new row with the existing primary key.<br><br>
+            5.It is recommended to use INT or BIGINT data type for the primary key column.
+        
+        </p>
+    <p><h3 style="color:blue;">Syntax:</h3> create table table_name (column_name dt Primary Key(key constraints),...);</p>
+
+    <h2 style="color:green;">Output:</h2>
+    <p>We can create a primary key in two ways:<br><br>
+    
+        1.CREATE TABLE Statement<br><br>
+        2.ALTER TABLE Statement
+    </p>
+<h3>Primary Key</h3>
+<img src="Primary key constraints.png" border="1px" width="350px">
+
+    
+        <h3 align="center" style="margin-top:100px;"><a href="code28.html" class="class4">Back</a>
+            <a href="temp1.html" class="class4">Refresh</a>
+        <a href="code30.html" class="class4">Next</a>
+    </h3>
+ 
+
+</body>
+
+</html>

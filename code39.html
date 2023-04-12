@@ -1,0 +1,130 @@
+<html>
+
+<head>
+    <title>DUAL TABLE & SCALAR FUNCTION</title>
+    <link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.osTTmoI1uUGX-YVC1CkQ-wHaHZ&pid=Api&P=0" type="image/x-icon">
+    <style>
+        #demo {
+            
+            
+            color: White;
+            padding: 0.5rem;
+            
+
+        }
+        
+
+        #demo1 {
+            color:crimson;
+            border: solid;
+            background-color:white;
+            border-color: white;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            
+
+        }
+
+        .class1 {
+
+            padding: 0.5rem;
+        }
+
+        .class2 {
+
+            padding: 0.5rem;
+        }
+
+        .class3 {
+
+            padding: 0.5rem;
+        }
+
+        .class4 {
+
+            color: white;
+            border: solid;
+            background-color:teal;
+            border-color:teal;
+            text-decoration: none;
+             min-width:100px;
+
+
+
+        }
+        li{
+
+            margin-top:8rem;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color:green;
+        }
+        
+        
+    </style>
+</head>
+
+<body style="background: linear-gradient(teal 8%, transparent 8%) no-repeat;">
+
+    <h1 align="left" id="demo"><b>DBMS WEBSITE</b></h1>
+
+    <h4 align="right"><a href="temp1.html" class="class1" id="demo1"><b>Home</b></a>
+        <a href="index.html" class="class2" id="demo1"><b>Index</b></a>
+        <a href="about.html" class="class3" id="demo1"><b>About<b></a>
+    </h4>
+ 
+    <ul>
+
+        <li><h2 style="color:red;">DUAL TABLE & SCALAR FUNCTION</h2></li>
+
+    </ul><br>
+    <h2>Dual Table</h2>
+    <p>There may be a situation where we want to query something that is not from a table. For example, getting the current date or querying a simple arithmetic expression like 2+2. In Oracle, clause FROM is not exceptional. If we don’t write the FROM clause in Oracle, we’ll get an error.<br><br>
+        Selecting from the DUAL table is useful for computing a constant expression with the SELECT statement. Because DUAL has only one row, the constant is returned only once.</p>
+    <p><h3 style="color:blue;">Syntax 1:</h3> select data from dual;</p><br><br><br>
+    <h2>Scalar Function</h2>
+    <p>We can perform different operations on the data stored in the SQL database. This can be done with the help of built-in functions provided by SQL. Scalar functions are the built-in functions in SQL, and whatever be the input provided to the scalar functions, the output returned by these functions will always be a single value.<br><br>
+
+        In SQL, each record is operated independently by the scalar functions.<br><br>
+        
+        Some of the commonly used scalar functions in SQL includes:<br><br>
+        
+            1.UCASE()<br><br>
+            2.LCASE()<br><br>
+            3.MID()<br><br>
+            4.LENGTH()<br><br>
+            5.ROUND()<br><br>
+            6.NOW()<br><br>
+            7.FORMAT</p>
+
+    <p><h3 style="color:blue;">Syntax 2:</h3> select scalar function(col_name) from table_name;</p>
+
+    <h2 style="color:green;">Output:</h2>
+<h3>DUAL TABLE</h3>
+<p>DUAL : It is a table that is automatically created by Oracle Database along with the data dictionary. DUAL is in the schema of the user SYS but is accessible by the name DUAL to all users. It has one column, DUMMY, defined to be VARCHAR2(1), and contains one row with a value X.</p>
+
+<img src="DUAL TABLE.png" border="1px" width="350px"><br><br>
+<p>Several other databases, including MS SQL Server, MySQL, PostgreSQL and SQLite, allows the omitting FROM clause. This exception is the reason there is no dummy table like DUAL in other databases.<br><br>
+
+    【dual in MySQL】<br><br>
+    
+    DUAL is purely for the convenience of people who require that all SELECT statements should have FROM and possibly other clauses.<br><br>
+    
+    MySQL may ignore the clauses. MySQL does not require FROM DUAL if no tables are referenced. Meanwhile, you are permitted to specify DUAL as a dummy table name in situations where no tables are referenced.</p>
+
+
+<h3>SCALAR FUNCTION</h3>
+
+<img src="SCALAR FUNCTION.png" border="1px" width="350px">
+
+    
+        <h3 align="center" style="margin-top:100px;"><a href="code38.html" class="class4">Back</a>
+            <a href="temp1.html" class="class4">Refresh</a>
+        <a href="code40.html" class="class4">Next</a>
+    </h3>
+ 
+
+</body>
+
+</html>
